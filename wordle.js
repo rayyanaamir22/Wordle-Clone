@@ -239,3 +239,18 @@ function update() {
   row += 1; // Start in next row
   column = 0; // Restart at first column
 }
+
+function darkMode() { // This doesn't work because it's in a different file...
+  if (!darkMode) {
+    var element = document.body;
+    element.className = "dark-mode";
+    darkMode = true;
+    document.getElementById("dark-mode-button").innerText = "Light mode";
+  } 
+  else {
+    var element = document.body;
+    element.classname = "light-mode";
+    darkMode = false;
+    document.getElementById("dark-mode-button").innerText = "Dark mode";
+  }
+}
